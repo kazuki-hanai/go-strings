@@ -91,7 +91,7 @@ func TestStrings(t *testing.T) {
 		".bss",
 		".comment",
 	}
-	result, err := GetStrings(f, 4, 1024)
+	result, err := GetStrings(f, 4)
 
 	assert.Nil(t, err)
 	assert.Equal(t, expected, result)

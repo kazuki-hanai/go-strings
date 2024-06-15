@@ -10,7 +10,7 @@ func isPrintable(b byte) bool {
 }
 
 // Read strings from reader and return them as a slice of strings
-func GetStrings(f io.Reader, minWordCount, bufsize int) ([]string, error) {
+func GetStrings(f io.Reader, minWordCount int) ([]string, error) {
 	buf := bufio.NewReader(f)
 
 	result := make([]string, 0)
